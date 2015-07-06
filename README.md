@@ -29,3 +29,9 @@ $timer: timer-start();
 * `elapsed-time($start-time)` - returns the delta since the timer was
   started.
 * `$timer-imported-at` - The time the timer module was first imported.
+
+### Caveats
+
+This only times the execution of your Sass file. The Sass parse and
+CSS generation time, as well as the timing of some Sass directives
+like `@extend` will happen outside of the execution phase.
