@@ -1,0 +1,13 @@
+$timer-imported-at: eg-current-time-ms() !default;
+
+@function current-time-ms() {
+  @return eg-current-time-ms();
+}
+
+@function timer-start() {
+  @return eg-current-time-ms();
+}
+
+@function elapsed-time($start-time) {
+  @return eg-current-time-ms() - $start-time;
+}
