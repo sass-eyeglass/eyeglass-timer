@@ -7,7 +7,7 @@
     "email": "chris@eppsteins.net",
     "url": "https://github.com/chriseppstein"
   },
-  "license": "Apache License 2.0",
+  "license": "Apache-2.0",
   "main": "eyeglass-exports.js",
   "README": "README.md",
   "scripts": {
@@ -22,7 +22,8 @@
     "eyeglass-module"
   ],
   "eyeglass": {
-    "name": "timer"
+    "name": "timer",
+    "needs": "^0.2"
   },
   "devDependencies": {
     "eslint": "^0.14.1",
