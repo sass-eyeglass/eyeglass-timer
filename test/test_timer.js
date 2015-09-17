@@ -1,6 +1,6 @@
 "use strict";
 
-var testutils = require("./testutils");
+var testutils = require("eyeglass-dev-testutils");
 
 describe("timer", function () {
   it("can calculate deltas", function (done) {
@@ -11,6 +11,7 @@ describe("timer", function () {
     var expectedOutput = "/*! Elapsed Time: 0ms */\n";
     testutils.assertCompiles(options, expectedOutput, done);
   });
+
   it("can calculate delta from import", function (done) {
     var options = {
       data: "@import 'timer';" +
